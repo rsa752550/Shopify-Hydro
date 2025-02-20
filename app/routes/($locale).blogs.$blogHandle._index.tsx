@@ -68,6 +68,7 @@ export default function Blog() {
   return (
     <div className="blog">
       <h1>{blog.title}</h1>
+      <hr />
       <div className="blog-grid">
         <PaginatedResourceSection connection={articles}>
           {({node: article, index}) => (

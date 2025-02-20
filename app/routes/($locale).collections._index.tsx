@@ -48,6 +48,7 @@ export default function Collections() {
   return (
     <div className="collections">
       <h1>Collections</h1>
+      <hr />
       <PaginatedResourceSection
         connection={collections}
         resourcesClassName="collections-grid"
@@ -72,6 +73,7 @@ function CollectionItem({
   index: number;
 }) {
   return (
+    <div className="coll-All">
     <Link
       className="collection-item"
       key={collection.id}
@@ -79,6 +81,7 @@ function CollectionItem({
       prefetch="intent"
     >
       {collection?.image && (
+        <div className="coll-Image">
         <Image
           alt={collection.image.altText || collection.title}
           aspectRatio="1/1"
@@ -86,9 +89,11 @@ function CollectionItem({
           loading={index < 3 ? 'eager' : undefined}
           sizes="(min-width: 45em) 400px, 100vw"
         />
+        </div>
       )}
       <h5>{collection.title}</h5>
     </Link>
+    </div>
   );
 }
 

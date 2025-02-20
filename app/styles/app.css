@@ -560,3 +560,41 @@ transform: scale(1.2);
 .product-card small{
   color: red;
 }
+
+.coll-All {
+background: gray;
+text-align: center;
+padding-bottom: 3px;
+border-radius: 15px;
+}
+.coll-All h5{
+  color: white;
+}
+.coll-All img {
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+.coll-All .coll-Image {
+overflow: hidden;
+border-radius: 15px;
+}
+.coll-All:hover .coll-Image img{
+  transform: scale(1.2);
+}
+.collections h1, .blog h1{
+  text-align: center;
+  border: 4px solid black;
+  margin: 2rem auto;
+  padding: 10px;
+  display: block;
+  width: 200px;
+  
+
+}
+.collections hr, .blog hr{
+  height: 4px;
+  background: black;
+  display: block;
+  margin: 5px auto 15px;
+  
+}
